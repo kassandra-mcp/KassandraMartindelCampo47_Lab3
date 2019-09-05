@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo 
+{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo > img 
+{
+  	width: 70px;
+}
+
+.navbar 
+{
+	background-color: gray;
+	color: white;
+	text-align: right;
+}
+
+main 
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.product > p 
+{
+	text-align: left;
+	justify-content: space-around;
+}
+
+.social
+{
+	padding: 0;
+	margin: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.social > li{
+	display: inline;
+	align-items: center;
+	width: 50%;
+	padding: 10px 20px;
+}
+
+footer
+{
+	border-top: 1px solid gray;
+	margin-top: 10px;
+}
+
+@media(max-width: 620px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	h1 
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.product
+	{
+		border: 1px solid gray;
+		border-radius: 10px 10px 10px 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		margin-left: 30px;
+		margin-right: 30px;
+		padding: 3px;
+		align-items: center;
+		text-align: left;
+		flex: 1px;
+	}
+
+	.menu
+	{
+		display: none;
+	}
+
+	.hamburger
+	{
+		text-align: right;
+	}
+}
+
+@media (min-width: 620px) and (max-height: 990px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: left;
+	}
+
+	h1 
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.product
+	{
+		border: 1px solid gray;
+		border-radius: 10px 10px 10px 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		margin-left: 30px;
+		margin-right: 30px;
+		padding: 3px;
+		align-items: center;
+		text-align: left;
+		flex: 1px;
+	}
+
+	.menu 
+	{
+		display: none;
+	}
+
+	.hamburger
+	{
+		text-align: right;
+	}
+}
+
+@media (min-width: 990px) 
+{
+	header
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+  		align-items: flex-start;
+	}
+
+	main 
+	{
+		flex-direction: row;
+	}
+
+	.product
+	{
+		border: 1px solid gray;
+		border-radius: 10px 10px 10px 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: 25px;
+		margin-right: 25px;
+		padding: 3px;
+		align-items: center;
+		text-align: left;
+		flex: 1px;
+	}
+
+	.hamburger 
+	{
+		display: none;
+	}
+
+	.menu 
+	{
+		overflow: hidden;
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.menu > li 
+	{
+		margin: 12px;
+	}
+}
